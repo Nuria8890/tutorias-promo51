@@ -1,3 +1,23 @@
+/* 
+MEDIDAS
+
+- Pixeles (px): medida fija.
+
+- Porcentaje (%): medida relativa. Ocupa un % del tamaño de su padre. Se usar cuando queremos que el elemento sea flexible.
+
+- max-width, min-width, max-height, min-height: medidas fijas. Como máximo o como mínimo quiero que mida "X"px.
+
+- Viewport (vw, vh): medidas relativas.
+  - vw: representa el % del ANCHO de la ventana del navegador.
+  - vh:  representa el % del ALTO de la ventana del navegador.
+
+- REM: medida relativa al tamaño de fuente del html (por defecto es 16px). Se usa para tipografías. Si usas media quieries, es muy útili utilizar REM, porque si cambias el tamaño de fuente del html en tablet, autmáticamente se te cambia el tamaño de fuente de todo el documento.
+
+- EM: medida relativa al tamaño de fuente de su padre.
+
+
+*/
+
 /* Estilos de reset */
 * {
   box-sizing: border-box;
@@ -5,8 +25,75 @@
   margin: 0;
 }
 
+:root {
+  font-size: 62.5%;
+  /* 10px */
+}
+
 ul {
   list-style: none;
 }
 
 /* Estilos de html */
+
+.header {
+  background-color: aqua;
+  display: flex;
+  justify-content: space-between;
+  min-width: 320px;
+  height: 10vh;
+}
+
+.header__title {
+  background-color: antiquewhite;
+  width: 50%;
+  text-align: center;
+}
+
+.header__nav {
+  background-color: bisque;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.main {
+  background-color: aquamarine;
+  height: 80vh;
+}
+
+.section__image {
+  background-color: lightcoral;
+}
+
+.section__image img {
+  width: 30%;
+  max-width: 340px;
+  min-width: 200px;
+}
+
+.section__text {
+  background-color: black;
+  display: flex;
+  gap: 20px;
+}
+
+.section__text__div {
+  background-color: brown;
+  font-size: 1.6rem;
+}
+.paragraph__rem {
+  background-color: lightgreen;
+  font-size: 1.6rem;
+}
+
+.paragraph__em {
+  background-color: lightgreen;
+  font-size: 1.6em;
+}
+
+.footer {
+  background-color: lightpink;
+  height: 10vh;
+}
