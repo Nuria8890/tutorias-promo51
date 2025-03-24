@@ -1,0 +1,21 @@
+.header {
+  background-color: aqua;
+  display: flex;
+  justify-content: space-between;
+  min-width: 320px;
+  height: 10vh;
+
+  &__title {
+    background-color: antiquewhite;
+    width: 50%;
+    text-align: center;
+  }
+
+  &__nav {
+    background-color: bisque;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
