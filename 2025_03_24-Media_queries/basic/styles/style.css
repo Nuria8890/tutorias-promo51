@@ -1,20 +1,10 @@
 /* 
-MEDIDAS
+MEDIA QUERIES
 
-- Pixeles (px): medida fija.
+Sirven para hacer un diseño responsive, que se adapte a los diferentes dispositivos y medias de pantalla. Para ello, se utilizan los puntos de ruptura (breakpoints).
 
-- Porcentaje (%): medida relativa. Ocupa un % del tamaño de su padre. Se usar cuando queremos que el elemento sea flexible.
-
-- max-width, min-width, max-height, min-height: medidas fijas. Como máximo o como mínimo quiero que mida "X"px.
-
-- Viewport (vw, vh): medidas relativas.
-  - vw: representa el % del ANCHO de la ventana del navegador.
-  - vh:  representa el % del ALTO de la ventana del navegador.
-
-- REM: medida relativa al tamaño de fuente del html (por defecto es 16px). Se usa para tipografías. Si usas media quieries, es muy útili utilizar REM, porque si cambias el tamaño de fuente del html en tablet, autmáticamente se te cambia el tamaño de fuente de todo el documento.
-
-- EM: medida relativa al tamaño de fuente de su padre.
-
+  - 768px: tablet (si la pantalla mide 768px o más, aplica los estilos)
+  - 1024: desktop (si la pantalla mide 1024px o más, aplica los estilos)
 
 */
 
@@ -47,7 +37,9 @@ ul {
 .header__title {
   background-color: antiquewhite;
   width: 50%;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header__nav {
@@ -106,4 +98,21 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .section__image {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  :root {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer {
+    align-items: center;
+    justify-content: space-between;
+  }
 }
