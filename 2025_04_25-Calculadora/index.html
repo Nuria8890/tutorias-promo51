@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Calculadora Básica</h1>
+    </header>
+    <main class="main">
+      <form action="">
+        <input
+          class="js-number1"
+          type="number"
+          placeholder="Ingrese un número"
+          name="numxa1"
+        />
+        <select class="js-operator">
+          <option value="sumar" name="operator">+</option>
+          <option value="restar" name="operator">-</option>
+          <option value="multiplicar" name="operator">*</option>
+          <option value="dividir" name="operator">/</option>
+        </select>
+        <input
+          class="js-number2"
+          type="number"
+          placeholder="Ingrese otro número"
+          name="num2"
+        />
+        <button type="submit" class="button js-button">Calcular</button>
+      </form>
+
+      <div class="message">
+        <h3 class="js-result">Resultado</h3>
+      </div>
+    </main>
+
+    <script type="text/javascript" src="./js/main.js"></script>
+  </body>
+</html>
