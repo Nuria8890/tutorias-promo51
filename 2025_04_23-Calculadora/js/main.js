@@ -30,15 +30,15 @@ const handleClick = (event) => {
   event.preventDefault();
   const num1 = parseInt(num1Input.value);
   const num2 = parseInt(num2Input.value);
-
+  const operatorValue = operator.value;
   let result;
-  if (operator.value === "sumar") {
+  if (operatorValue === "sumar") {
     result = num1 + num2;
-  } else if (operator.value === "restar") {
+  } else if (operatorValue === "restar") {
     result = num1 - num2;
-  } else if (operator.value === "multiplicar") {
+  } else if (operatorValue === "multiplicar") {
     result = num1 * num2;
-  } else if (operator.value === "dividir") {
+  } else if (operatorValue === "dividir") {
     result = num1 / num2;
   }
 
