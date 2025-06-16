@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  border: none;
+  width: fit-content;
+  cursor: pointer;
+}
+
+fieldset {
+  border: 0;
+}
+
+input {
+  align-self: self-start;
+}
+
+label {
+  align-self: self-start;
+}
